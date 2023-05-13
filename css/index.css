@@ -21,13 +21,15 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	
 }
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -68,11 +70,15 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 h3 {
@@ -84,16 +90,45 @@ p, a {
 }
 
 /* header section */
-header {
+header  {
     width: 100%;
     height: 100vh;
     background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+
+.sınıf{
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: white;
+    margin: 3% 43%;
+   
+    
+}
+header div{
+    background-color: rgb(0, 4, 17, .8);
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20%;
+    
+}
+header nav a{
+   margin-top: 3%;
+    color: white;
+    font-size: 2rem;
+
+
 }
 
 /* spacers */
+
 .spacer {
     width: 100%;
     height: 20vh;
@@ -108,9 +143,29 @@ header {
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+}
+.gallery div{
+    display: flex;
+    width: 10%;
+    text-align: center;
+    
+   
+}
+.gallery div img{
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 7%;
+    width: 330%;
+}
+.gallery h2{
+
+    text-align: center;
+    margin:0 0 0 380% ;
+    align-items: flex-end;
+    padding: 0;
 }
 
 /* about us section */
@@ -133,12 +188,26 @@ header {
     background-color: rgb(0, 4, 17, .8);
 }
 
-.about h2 {
+.about-container h2 {
     width: 100%;
+    padding:0;
+    margin: 0;
+}
+.about h3{
+    color: white;
+    font-size: 2rem;
+    
+
 }
 
 .about-container .text {
     width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.about-container .text p {
+    color: white;
+    font-size: 1.5rem;
 }
 
 /* contact us section */
@@ -155,6 +224,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgb(0, 4, 17, .8);
+    color: white;
 }
 
 .contact h2 {
@@ -163,6 +233,7 @@ header {
 
 .contact h3 {
     padding-top: 2.5vh;
+    font-size: 2rem;
 }
 
 .contact p {
@@ -170,22 +241,33 @@ header {
 }
 
 .info {
-    width: 100%;
+    width: 92%;
     display: flex;
     justify-content: space-around;
+    margin-left: 8%;
+    
+}
+.info p{
+    font-size: 1rem;
 }
 
 .address {
-    width: 25%;
+    width: 5%;
 }
 
 .hours {
-    width: 25%;
+    width: 5%;
     padding-bottom: 2.5vh;
 }
 
 .contacts {
-    width: 25%;
+    width: 5%;
+    
+}
+.contacts div a{
+    color: white;
+    font-size: 1.3rem;
+    
 }
 
 /* footer section */
@@ -193,12 +275,100 @@ footer {
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    display: flex;
+    background-color: rgb(0, 4, 17);
+    color: white;
+   
+
+}
+.bir nav{
+    width: 98vw;
+    height: 2vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+}
+.bir nav a{
+    
+    font-size: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    color: white;
+}
+.bir nav p{
+    font-size: 1;
+
+}
+.iki nav{
+    width: 98vw;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+}
+.iki nav a{
+    
+    font-size: 2rem;
+    justify-content: space-between;
+    margin-top: 1%;
+    color: white;
+    margin-top: 5%;
+}
+
+.bir p{
+    font-size: 1.3rem;
+    margin-left: 75%;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
+    header div nav{
+        flex-direction: column;
+    }
+    .sınıf{
+        flex-direction: row;
+       margin-left: 20%;
+       margin-right: 55%;
+       
+    }
+    h1{
+        width:75%;
+        margin: 0 auto;
+
+        
+    }
+    .gallery div{
+        flex-direction: column;
+        
+       
+    }
+    .gallery div img{
+        
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .gallery h2{
+    
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+    .bir nav{
+        margin-top: 0;
+    }
+    .info {
+       flex-direction: column;
+        
+    }
+}
     
 
     /* gallery section */
@@ -250,4 +420,4 @@ footer {
         padding-top: 2.5vh;
         font-size: 2rem;
     }
-}
+

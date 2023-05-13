@@ -67,23 +67,30 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 3.5rem;
+    padding-left: 25%;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: 4rem;
+    font-size: 2rem;
+    
+}
+h5 {
+    font-size: 2rem;
+    text-align: center;
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 /* header section */
@@ -94,6 +101,33 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+}
+.sınıf{
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: white;
+    margin: 3% 43%;
+   
+    
+}
+header div{
+    background-color: rgb(0, 4, 17, .8);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20%;
+    
+}
+header nav a{
+   margin-top: 3%;
+    color: white;
+    font-size: 1.7rem;
+
+
 }
 
 /* spacer */
@@ -114,19 +148,123 @@ header {
     width: 100%;
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(0, 4, 17, .8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
 }
+#birincisıra{
+
+    margin-left: 10%;
+}
+#ikincisıra{
+
+    margin-top: 3% ;
+    margin-left: 5%;
+}
+#ikincisıra p{
+    margin-bottom: 19px;
+}
+#ucuncusıra{
+    margin-left: 25%;
+}
+
+#ucuncusıra h4{
+    margin-top: 32%;
+}
+#dorduncusıra{
+    margin-top: 3% ;
+    margin-left: 1%;
+}
+#dorduncusıra p{
+    margin-top: 15% ;
+    margin-left: 5%;
+    margin-bottom: 80%;
+}
+#besincisıra{
+    margin-top: 2.5% ;
+    margin-left: 40%;
+    
+}
+.yan{
+    display: flex;
+    margin-top: 3%;
+    
+}
+.menu div div{
+    display: flex;
+    flex-direction: column;
+}
+
+#silik{
+    font-size: 1rem;
+    color: rgb(175, 175, 170);
+    padding-bottom: 2%;
+
+}
+#second{
+    display: flex;
+flex-direction: column;
+
+}
+#sonpler{
+    margin-bottom: 0%;
+}
+
 
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 35vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    
+    background-color: rgb(0, 4, 17);
+    color: white;
+   
+
 }
+footer nav{
+    
+    width: 100%;
+    
+}
+footer nav a{
+
+   
+    color: white;
+    font-size: 0.9rem;
+}
+.bir{
+    width: 80%;
+    
+}
+.bir nav{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.bir nav a{
+    
+    font-size: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    color: white;
+}
+.bir nav a{
+    font-size: 0.9rem;
+
+}
+
+
+.bir p{
+    font-size: 1.3rem;
+    margin-left: 75%;
+}
+
 
 /* mobile media query */
 @media (max-width: 428px) {
@@ -137,16 +275,59 @@ footer {
         text-align: center;
         font-size: 4rem;
     }
+    header h1{
+        width:90%;
+    }
+    .sınıf{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 2%;
+    }
+    nav{
+        flex-direction: column;
+        margin-left: 40%;
+        
+    }
 
     /* menu */
     .menu {
         background-image: none;
     }
 
-    /* footer section */
-    footer {
-        height: auto;
-        padding-top: 2.5vh;
-        font-size: 2rem;
-    }
+    /* footer secsstion */
+    
+#ucuncusıra{
+    margin-left: 0;
+}
+#dordunncusıra{
+    margin-left: 0;
+    margin-top: 3%;
+}
+#ucuncusıra h4{
+    
+    margin-top: 12px;
+}
+#besincisıra{
+    margin-left: 0;
+}
+h2{
+    margin-left: 0;
+    text-align: left;
+}
+h5 {
+    font-size: 2rem;
+    text-align:left;
+    margin-left: 0;
+
+}
+.yan{
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-start;
+    margin-left: 0;
+}
+.bir nav{
+    flex-direction: column;
+   
+}
 }
